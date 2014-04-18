@@ -34,9 +34,8 @@ DEPENDENCIES
 * python3-gi  Gtk3 的python3 绑定. 这个包需要手动安装gir1.2-gtk-3.0, 但它并
 没有把这个依赖关系写清楚, 详细情况请看 [issue 5](https://github.com/LiuLang/bcloud/issues/5)
 * gnome-icon-theme-symbolic Gnome3 提供的一套按纽.
-* python3-keyring  这个模块是推荐安装的, 用于把帐户的密码存放到
+* python3-keyring  这个模块是推荐安装的, 用于把帐户的密码存放到gnome-keyring或kwallet里面; 如果缺少了这个模块, 帐户的密码就会被明文存储!
 * python3-dbus  dbus的python3绑定, 如果在密码时超时, 会产生一个dbus.exceptions.Exception异常.
-gnome-keyring或kwallet里面; 如果缺少了这个模块, 帐户的密码就会被明文存储!
 * gir1.2-notify 这个是GtkNotification的接口, 显示桌面消息通知
 
 Q&A
